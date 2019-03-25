@@ -1,0 +1,51 @@
+{
+  "name": "@unicorn-fail/drupal-bootstrap-styles",
+  "version": "0.0.1",
+  "description": "Styles used to bridge the gap between Drupal and Bootstrap.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unicorn-fail/drupal-bootstrap-styles.git"
+  },
+  "author": "Mark Carver",
+  "license": "GPL-2.0",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "node ./build.js",
+    "test": "node ./build.js --no-interactive",
+    "prepare": "node ./build.js --no-interactive"
+  },
+  "devDependencies": {
+    "@unicorn-fail/string-extra": "^1.0.2",
+    "ansi-escapes": "^4.0.1",
+    "ansi-regex": "^4.1.0",
+    "bluebird": "^3.5.3",
+    "chalk": "^2.4.2",
+    "clean-css": "^4.2.1",
+    "cli-cursor": "^2.1.0",
+    "cli-spinners": "^2.0.0",
+    "fs-extra": "^7.0.1",
+    "get-sri": "^1.0.2",
+    "less": "^3.9.0",
+    "less-plugin-autoprefix": "^2.0.0",
+    "less-plugin-clean-css": "^1.5.1",
+    "live-plugin-manager": "^0.12.0",
+    "log-symbols": "^2.2.0",
+    "node-graceful": "^1.0.1",
+    "p-queue": "^4.0.0",
+    "pretty-time": "^1.1.0",
+    "semver": "^5.6.0",
+    "simple-json-request": "^0.5.2",
+    "string": "^3.3.3",
+    "yargs": "^13.2.1"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/unicorn-fail/drupal-bootstrap-styles/issues"
+  },
+  "homepage": "https://github.com/unicorn-fail/drupal-bootstrap-styles#readme",
+  "directories": {
+    "lib": "lib"
+  }
+}
