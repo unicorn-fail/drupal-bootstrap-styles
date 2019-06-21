@@ -8,14 +8,20 @@
   },
   "author": "Mark Carver",
   "license": "GPL-2.0",
+  "engines": {
+    "node": ">=6.*",
+    "yarn": ">=1.*"
+  },
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "node ./build.js",
     "test": "node ./build.js --no-interactive",
-    "prepare": "node ./build.js --no-interactive"
+    "prepublishOnly": "node ./build.js --no-color --no-interactive --remove-dist",
+    "heroku-postbuild": "node ./build.js --no-color --no-interactive --remove-dist"
   },
+  "cacheDirectories": ["assets", "node_modules"],
   "devDependencies": {
     "@unicorn-fail/string-extra": "^1.0.2",
     "ansi-escapes": "^4.0.1",
